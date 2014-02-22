@@ -1,0 +1,6 @@
+<h1>Read all notes</h1>
+
+<% @notes.each do |note| %>
+	<p> <%= "Title: " + note.title %></p>
+	<p> <%= "Content: " + note.content %></p>
+<% end %>

@@ -1,0 +1,8 @@
+<h1>Update your note</h1>
+
+<form action="/updated" method="POST">
+	<input type="text" style="display: none" value="<%= @note.id %>" name="id">
+	Title: <input type="text" name="title" value="<%= @note.title %>"><br><br>
+	Content: <textarea name="content" rows="10", cols="75"><%= @note.content %></textarea><br><br>
+	<input type="submit">
+</form>

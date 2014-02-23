@@ -1,4 +1,4 @@
-<h1>Update a note</h1>
+<h1>Delete a note</h1>
 
 <% @notes.each_with_index do |note, index| %>
 	<p><%= (index + 1).to_s + " - " + note.title %></p>
@@ -6,8 +6,8 @@
 
 <br><br>
 
-<form action="/update" method="POST">
-	Enter the title to update:
+<form action="/delete" method="POST">
+	<p>Enter the title to delete:</p>
 	<input type="text", name="title">
 	<input type="submit">
 </form>
